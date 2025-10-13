@@ -1,4 +1,4 @@
-s = "fffffff$$$$xxxx4sjfkbdhfxcjzui"
+s = str(input())
 top=[]
 used = []
 for i in s:
