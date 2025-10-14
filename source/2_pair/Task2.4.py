@@ -19,7 +19,7 @@ def gener_password(list_of_needs):
     Raises:
         ValueError: Если задана длина пароля меньше 1.
 
-    Пример:
+    Example:
         >>> gener_password([1, 1, 0, 1, 8])
         Ваш пароль: Ab4kdG0c
     """
@@ -59,3 +59,4 @@ if list_of_needs[4] > 0:
     gener_password(list_of_needs)
 else:
     raise ValueError("Длина пароля не может быть меньше 1.")
+
