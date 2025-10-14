@@ -1,17 +1,37 @@
-from itertools import count
-
 def print_pack_report(product):
+    """
+    Выводит отчет о возможности расфасовки продукта по 3 или 5 единиц.
+
+    Функция проверяет, делится ли количество продукта на 3 и/или на 5,
+    и выводит соответствующее сообщение:
+    - Если число делится на 3 и 5 — "Расфасуем по 3 или по 5."
+    - Если делится только на одно из них — "Расфасуем по (найденному делителю)".
+    - Если не делится ни на 3, ни на 5 — "Не заказываем!"
+
+    Args:
+        product (int): Количество продукта для проверки.
+        dividers (list): Хранит делители продукта.
+
+    Returns:
+        None: функция выводит данные о расфасовке в консоль.
+
+    Example:
+        >>> print_pack_report(30)
+        30 - Расфасуем по 3 или по 5.
+    """
     dividers = []
     for i in "35":
-        if product%int(i) == 0:
+        if product % int(i) == 0:
             dividers.append(i)
     if len(dividers) == 2:
-        print(f"{product} - Расфасуем по 3 или по 5")
+        print(f"{product} - Расфасуем по 3 или по 5.")
     elif len(dividers) == 1:
-        print(f"{product} - Расфасуем по {dividers[0]}")
+        print(f"{product} - Расфасуем по {dividers[0]}.")
     else:
         print(f"{product} - Не заказываем!")
+
+
 prod = 0
-while prod<1:
+while prod < 1:
     prod = int(input())
 print_pack_report(prod)
