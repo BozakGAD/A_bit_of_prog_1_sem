@@ -32,6 +32,8 @@ def print_pack_report(product):
 
 
 prod = 0
+print("Введите количество заказываемого продукта:")
 while prod < 1:
     prod = int(input())
 print_pack_report(prod)
+
