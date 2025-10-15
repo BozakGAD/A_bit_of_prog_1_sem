@@ -19,7 +19,7 @@ def which_alpha(char):
     None: Если символ не принадлежит ни одному из алфавитов, возвращает None.
 
     Example:
-        >>> "U"
+        >>> which_alpha("U")
         ENG_ALPHA_UPPER
     """
     if char in ENG_ALPHA_LOW:
@@ -52,7 +52,7 @@ def cypher(text_to_cypher, shift_num):
     - Символы, не принадлежащие алфавиту, остаются без изменений.
 
     Example:
-        >>> "Самая лучшая шифровка в мире", 5
+        >>> cypher("Самая лучшая шифровка в мире", 5)
         "Цесед ршьэед энщхузпе з снхк"
     """
     cyphered_text = ""
@@ -85,7 +85,7 @@ def decypher(text_to_decypher, shift_num):
         - остаются без изменений.
 
         Example:
-            >>> "Цесед ршьэед энщхузпе з снхк", 5
+            >>> decypher("Цесед ршьэед энщхузпе з снхк", 5)
             "Самая лучшая шифровка в мире"
         """
     decyphered_text = ""
