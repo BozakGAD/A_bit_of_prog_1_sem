@@ -16,7 +16,7 @@ def rom_arab_converter(list_arab_rom):
             list: Список с преобразованными числами.
             - Римские числа преобразуются в этом списке в арабские и наоборот.
         Example:
-            >>> 3658 34 XVII DCCXXIV
+            >>> rom_arab_converter("3658", "34", "XVII", "DCCXXIV")
             ['MMMDCLVIII', 'XXXIV', 17, 724]
         """
     translated_list = []
