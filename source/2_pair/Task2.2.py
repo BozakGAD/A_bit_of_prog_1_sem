@@ -27,5 +27,6 @@ def check_winners(scores, student_score):
 
 all_s = [int(i) for i in range(1, 1001)]
 shuffle(all_s)  # Имитирую рандомизированность списка
+print("Введите ваш результат:")
 stud_s = int(input())
 check_winners(all_s, stud_s)
