@@ -30,5 +30,6 @@ class Book:
         return f"Название: {self.title}; Автор: {self.author}; Год издания: {self.year}."
 
 
-Book1 = Book("Атака на титанов ч.1", "Хадзимэ Исаяма", "2009")
+Book1 = Book("Атака на титанов г.1", "Хадзимэ Исаяма", "2009")
 print(Book1.description())
+
