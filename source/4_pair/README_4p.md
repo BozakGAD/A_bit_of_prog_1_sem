@@ -14,6 +14,6 @@
 Book с дополнительным атрибутом format.
 - Переопределить метод info().
 > Вследствие скипа почти половины пары из-за моих любимейших начальничков, не пон, что включает в себя этот загадочный format.
-> ### Файл: [Task4.2](https://github.com/BozakGAD/A_bit_of_prog_1_sem/blob/main/source/4_pair/4.2.py)
+### Файл: [Task4.2](https://github.com/BozakGAD/A_bit_of_prog_1_sem/blob/main/source/4_pair/4.2.py)
 
 ## 3. 
